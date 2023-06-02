@@ -20,7 +20,18 @@ export class IPv4Input extends React.Component {
   
     handleSubmit(event) {
       if(VerificadorV4(this.state.value)){
-        let data = getData(this.state.value)
+       // let data = getData(this.state.value)   conexion con api
+        let data = { //Dummie npara trabajar
+          "ip": "161.185.160.93",
+          "city": "New York City",
+          "region": "New York",
+          "country": "US",
+          "loc": "40.7143,-74.0060",
+          "org": "AS22252 The City of New York",
+          "postal": "10004",
+          "timezone": "America/New_York",
+          "readme": "https://ipinfo.io/missingauth"
+      } 
         event.preventDefault();
       }
       else{

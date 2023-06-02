@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import axios from "axios";
+import MapChart from "./MapChart";
 
 const Casos = ({ urlIP, regex, urlPost}) => {
 
@@ -25,6 +26,9 @@ const Casos = ({ urlIP, regex, urlPost}) => {
     const [response, setResponse] = useState({})
     const [isValidFormat, setIsValidFormat] = useState(false)
     const [isValidResponse, setIsValidResponse] = useState(true)
+    const [lat, setLat] = useState(0)
+    const [long, setLong] = useState(0)
+
 
     const checkIP = (string) => {
         return regex.test(string)
@@ -52,6 +56,8 @@ const Casos = ({ urlIP, regex, urlPost}) => {
                 "readme": "https://ipinfo.io/missingauth"
             })
             setIsValidResponse(!isValidResponse)
+            setLat(response.loc.split(",")[0])
+            setLong(response.loc.split(",")[1])
         } else {
             axios.get(urlIP + input + "/geo")
                 .then((response) => {
@@ -173,6 +179,7 @@ const Casos = ({ urlIP, regex, urlPost}) => {
                     </Table>
                 </TableContainer>
             </Center>
+            <MapChart lat={lat} long={long}></MapChart>
         </VStack>
     )
 }

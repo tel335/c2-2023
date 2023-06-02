@@ -38,7 +38,7 @@ function SearchIP() {
 
     const showMessage = () => {
         if(isValidIPv4(textIP) === false && textIP !== '')
-            alert(`La dirección IP ${textIP} no es válida`)
+            alert(`La dirección IP ${textIP} no es válida `)
     }
 
 

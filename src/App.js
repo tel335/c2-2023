@@ -1,9 +1,10 @@
 import './App.css';
+import SearchPage from './SearchPage2';
 
 function App() {
   return (
     <div className="App">
-      <h1>CONTROL 2 TEL-335</h1>
+      <SearchPage />
     </div>
   );
 }

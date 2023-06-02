@@ -59,7 +59,7 @@ function Ejercicio1() {
     }
   };
 
-  //Función que 
+  //Función que maneja los datos guardados para hacer post en la dirección correspondiente
   const handleSave = async () => {
     try {
       const response = await axios.post("https://jsonplaceholder.typicode.com/posts");

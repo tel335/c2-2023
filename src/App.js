@@ -1,9 +1,12 @@
 import './App.css';
+import Ejercicio1 from './Components/Ejercicio1';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>CONTROL 2 TEL-335</h1>
+      <Header />
+      <Ejercicio1/>
     </div>
   );
 }

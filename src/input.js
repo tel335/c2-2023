@@ -1,4 +1,4 @@
-// BuscadorIP.js
+// caso 1
 import React, { useState } from "react";
 import axios from 'axios';
 let gummy = { //objeto creado como reemplazo del axios.get a la api
@@ -14,7 +14,7 @@ let gummy = { //objeto creado como reemplazo del axios.get a la api
 };
 
 
-const BuscadorIP = () => {
+const inputIP = () => {
   const [ip, setIP] = useState('');
   const [data, setData] = useState(""); //ahora lo defino como string vacio en vex de null solo pq no funciona la api
 
@@ -40,4 +40,4 @@ const BuscadorIP = () => {
   );
 }
 
-export default BuscadorIP;
+export default inputIP;

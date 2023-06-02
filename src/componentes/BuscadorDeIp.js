@@ -6,11 +6,12 @@ import { ipv4Valida } from "../funciones/funciones";
 export default function BuscadorDeIp() {
     const variablePrueba = {
         "ip": "161.185.160.93",
+        "hostname": "ip-116-233.219.201.wom.cl",
         "city": "New York City",
         "region": "New York",
         "country": "US",
         "loc": "40.7143,-74.0060",
-        "org": "AS22252 The City of New York",
+        "org": "AS22252 The City of New  York",
         "postal": "10004",
         "timezone": "America/New_York",
         "readme": "https://ipinfo.io/missingauth"
@@ -41,7 +42,7 @@ export default function BuscadorDeIp() {
 
     useEffect(()=>{
         const guardarInfo=async()=>{
-            saveInfo(info)}
+            saveInfo(ip)}
             guardarInfo()
     },[Guardar]
     )
@@ -83,7 +84,9 @@ export default function BuscadorDeIp() {
             document.getElementById("botonBuscar").disabled = true;
         }
     }, [habilitar]);
+    
 
+    
     //para mostrar info en carta
 
 
@@ -100,6 +103,8 @@ export default function BuscadorDeIp() {
                     <h5 class="card-title">Info segun IP</h5>
                     <p class="card-text">ip </p>
                     <p class="card-text">{ip.ip}</p>
+                    <p class="card-text">hostname </p>
+                    <p class="card-text">{ip.hostname}</p>
                     <p class="card-text">city </p>
                     <p class="card-text">{ip.city}</p>
                     <p class="card-text">region </p>

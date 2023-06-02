@@ -1,3 +1,84 @@
+.nav {
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search h1{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.search input {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  color: #64696d;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+.search button{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #434343;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.list h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.list li {
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.list li:hover {
+  background-color: #eaeaea;
+}
+
+.list button{
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #434343;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .App {
   text-align: center;
 }

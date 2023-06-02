@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import './input4.css';
 //IMPORTANTE: en esta pregunta comenté denuevo el get y simulé un status=200 para asumir que la api sí me retornó datos y poder guardarlos 
 const gummy = {
     "ip": "161.185.160.93",
@@ -71,14 +72,20 @@ const Input4 = () => {
   }
 
   return (
-    <div>
-      <input type="text" onChange={handleChange} />
-      <button onClick={handleClick} disabled={!ip || error}>Buscar</button>
+    <div className="container">
+      <input type="text" className="input" onChange={handleChange} />
+      <button className="button" onClick={handleClick} disabled={!ip || error}>
+        Buscar
+      </button>
       {error && <p>{error}</p>}
       {data && (
         <>
           <pre>{JSON.stringify(data, null, 2)}</pre>
-          <button onClick={handleSave} disabled={saveStatus || !data}>
+          <button
+            className="button"
+            onClick={handleSave}
+            disabled={saveStatus || !data}
+          >
             Guardar
           </button>
           {saveStatus && <p>{saveStatus}</p>}

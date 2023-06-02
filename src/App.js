@@ -1,9 +1,10 @@
-import './App.css';
-
+import "./App.css";
+import BuscadorIP from "./input";
 function App() {
   return (
     <div className="App">
-      <h1>CONTROL 2 TEL-335</h1>
+      <h1>Certamen 2 Apps webs</h1>
+      <BuscadorIP />
     </div>
   );
 }

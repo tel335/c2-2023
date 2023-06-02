@@ -23,7 +23,7 @@ function SearchButton(props){
     }
 
     return(
-        <Button onClick={() => searchInfo()}>Browse</Button>
+        <Button disabled={!props.valid} onClick={() => searchInfo()}>Browse</Button>
 
     )
 

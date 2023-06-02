@@ -1,25 +1,27 @@
-import { useState } from "react"
-
-
 function IpInput(props){
 
-    const [valid, setValid] = useState(false)
+
 
     const checkInput = (input) => {
         const Ip = input.split(".")
+        
 
         if(Ip.length !== 4){
-            props.setInvalid()
-            setValid(false)
+            props.setValid(false)
             return
         }
 
+        let valid = true
+
         Ip.forEach((number) => {
-            if((Number(number) > 255)){
-                return
+            if((Number(number) > 255) || (Number(number) < 0) || (number === '')){
+                valid=false  
             }
         })
 
+        console.log(valid)
+
+        props.setValid(valid)
         props.setSearch(input)
     }
 

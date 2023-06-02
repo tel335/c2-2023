@@ -11,16 +11,17 @@ function Browser(){
     return(
         <>
             <IpInput 
-                setValid={()=> setValidInput(true)} 
-                setInvalid={()=> setValidInput(false)}
+                setValid={setValidInput}
                 setSearch = {setSearch}
             />
             
             <SearchButton 
                 search={search}
                 setInfo = {setIPInfo}
+                valid= {validInput}
             />
 
+            <h1>{validInput? 'valido' : 'not valid'}</h1>
             <h5>{IPinfo.op}</h5>
             <h5>{IPinfo.city}</h5>
             <h5>{IPinfo.region}</h5>

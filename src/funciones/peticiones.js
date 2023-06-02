@@ -2,14 +2,10 @@ import axios from "axios";
 
 
 export async function getInfoOfIpv4(ipv4) {
-  
+    //si no hay argumento se busca la ip 161.185.160.93
+    
     const response = await axios.get('https://ipinfo.io/'+ipv4 +'/geo');
-    if (response.status !== 200) {
-        throw new Error(`Fallo del servidor ${response.status}`);
-    }
-    else{
-        return response.data;
-    }
+    return response.data;
 }
 
 export async function saveInfo(ip,city,region,country){

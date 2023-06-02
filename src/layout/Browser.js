@@ -21,7 +21,7 @@ function Browser(){
                 valid= {validInput}
             />
 
-            <h1>{validInput? 'valido' : 'not valid'}</h1>
+            <h1>{validInput? '' : 'Formato no válido'}</h1>
             <h5>{IPinfo.op}</h5>
             <h5>{IPinfo.city}</h5>
             <h5>{IPinfo.region}</h5>

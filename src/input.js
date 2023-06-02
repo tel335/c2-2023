@@ -1,4 +1,4 @@
-// caso 1
+// caso 1 realizado
 import React, { useState } from "react";
 import axios from 'axios';
 let gummy = { //objeto creado como reemplazo del axios.get a la api
@@ -14,7 +14,7 @@ let gummy = { //objeto creado como reemplazo del axios.get a la api
 };
 
 
-const inputIP = () => {
+const InputIP = () => {
   const [ip, setIP] = useState('');
   const [data, setData] = useState(""); //ahora lo defino como string vacio en vex de null solo pq no funciona la api
 
@@ -40,4 +40,4 @@ const inputIP = () => {
   );
 }
 
-export default inputIP;
+export default InputIP;

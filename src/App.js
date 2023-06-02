@@ -1,5 +1,5 @@
 import './App.css';
-import { IPv4Input, NameForm } from './components/IPv4Input';
+import { IPv4Input } from './components/IPv4Input';
 
 function App() {
   return (

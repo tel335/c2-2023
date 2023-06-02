@@ -1,38 +1,72 @@
-.App {
+body {
+  background-color: #a0edf0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.programa {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.escritos {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.escritos input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.escritos button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
 }
+
+.fallo {
+  color: #f00;
+}
+
+.datos {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.datos p {
+  margin: 5px 0;
+}
+
+.boton-guardar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mensaje-exito {
+  color: #4caf50;
+}
+
+.mensaje-fallo {
+  color: #f00;
+}
+
+/* Resto de estilos... */
